@@ -26,4 +26,11 @@ public class UserModel {
     private String name;
     private LocalDate dateOfBirth;
     private String email;
+
+    public UserModel(String cpf, String name, LocalDate dateOfBirth, String email) {
+        this.cpf = cpf;
+        this.name = name;
+        this.dateOfBirth = dateOfBirth;
+        this.email = email;
+    }
 }
