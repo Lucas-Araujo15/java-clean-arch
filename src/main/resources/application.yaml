@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: codechella
+  datasource:
+    password: root
+    username: root
+    url: jdbc:postgresql://localhost:5432/codechella
+    driver-class-name: org.postgresql.Driver
+  server:
+    port: 8080

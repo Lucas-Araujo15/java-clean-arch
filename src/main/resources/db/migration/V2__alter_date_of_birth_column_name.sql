@@ -1,0 +1,1 @@
+ALTER TABLE users RENAME COLUMN dateOfBirth TO date_of_birth;
