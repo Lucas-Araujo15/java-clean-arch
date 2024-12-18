@@ -1,6 +1,6 @@
 package br.com.alura.codechella.infra.gateways.mappers;
 
-import br.com.alura.codechella.domain.entities.user.User;
+import br.com.alura.codechella.domain.entities.User;
 import br.com.alura.codechella.infra.persistence.models.UserModel;
 
 public class UserMapper {

@@ -1,4 +1,4 @@
-package br.com.alura.codechella.domain;
+package br.com.alura.codechella.domain.valueobjects;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

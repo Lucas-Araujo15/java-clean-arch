@@ -1,14 +1,12 @@
-package br.com.alura.codechella.domain.entities.user;
+package br.com.alura.codechella.domain.entities;
 
-import br.com.alura.codechella.domain.Address;
+import br.com.alura.codechella.domain.valueobjects.Address;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.cglib.core.Local;
 
 import java.time.LocalDate;
 import java.time.Period;
-import java.time.temporal.ChronoUnit;
 import java.util.Objects;
 
 @NoArgsConstructor
