@@ -22,7 +22,7 @@ public class UserRepositoryImpl implements UserRepository {
 
     @Override
     public List<User> listAll() {
-        return List.of();
+        return jpaRepository.findAll().stream().map(mapper::toDomain).toList();
     }
 }
 
