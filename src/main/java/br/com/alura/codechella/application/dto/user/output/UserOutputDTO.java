@@ -1,8 +1,8 @@
-package br.com.alura.codechella.infra.controllers.dtos.user.input;
+package br.com.alura.codechella.application.dto.user.output;
 
 import java.time.LocalDate;
 
-public record UserInputDTO(
+public record UserOutputDTO(
         String cpf,
         String name,
         LocalDate dateOfBirth,

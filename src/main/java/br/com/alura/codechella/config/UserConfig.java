@@ -2,7 +2,10 @@ package br.com.alura.codechella.config;
 
 import br.com.alura.codechella.application.gateways.repositories.UserRepository;
 import br.com.alura.codechella.application.usecases.user.CreateUserUseCase;
+import br.com.alura.codechella.application.usecases.user.DeleteUserByIdUseCase;
+import br.com.alura.codechella.application.usecases.user.FindUserByIdUseCase;
 import br.com.alura.codechella.application.usecases.user.ListAllUsersUseCase;
+import br.com.alura.codechella.application.usecases.user.UpdateUserUseCase;
 import br.com.alura.codechella.infra.gateways.mappers.UserMapper;
 import br.com.alura.codechella.infra.gateways.repositories.UserRepositoryImpl;
 import br.com.alura.codechella.infra.persistence.repositories.UserJpaRepository;
@@ -29,5 +32,20 @@ public class UserConfig {
     @Bean
     ListAllUsersUseCase createListAllUsersUseCase(UserRepository repository) {
         return new ListAllUsersUseCase(repository);
+    }
+
+    @Bean
+    UpdateUserUseCase createUpdateUserUseCase(UserRepository repository) {
+        return new UpdateUserUseCase(repository);
+    }
+
+    @Bean
+    DeleteUserByIdUseCase createDeleteUserByIdUseCase(UserRepository repository) {
+        return new DeleteUserByIdUseCase(repository);
+    }
+
+    @Bean
+    FindUserByIdUseCase createFindUserByIdUseCase(UserRepository repository) {
+        return new FindUserByIdUseCase(repository);
     }
 }
