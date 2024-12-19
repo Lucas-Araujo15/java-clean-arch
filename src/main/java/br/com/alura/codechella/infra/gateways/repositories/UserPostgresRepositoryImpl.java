@@ -11,7 +11,7 @@ import lombok.RequiredArgsConstructor;
 import java.util.List;
 
 @RequiredArgsConstructor
-public class UserRepositoryImpl implements UserRepository {
+public class UserPostgresRepositoryImpl implements UserRepository {
     private final UserJpaRepository jpaRepository;
     private final UserMapper mapper;
 

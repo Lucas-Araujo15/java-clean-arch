@@ -7,7 +7,7 @@ import br.com.alura.codechella.application.usecases.user.FindUserByIdUseCase;
 import br.com.alura.codechella.application.usecases.user.ListAllUsersUseCase;
 import br.com.alura.codechella.application.usecases.user.UpdateUserUseCase;
 import br.com.alura.codechella.infra.gateways.mappers.UserMapper;
-import br.com.alura.codechella.infra.gateways.repositories.UserRepositoryImpl;
+import br.com.alura.codechella.infra.gateways.repositories.UserPostgresRepositoryImpl;
 import br.com.alura.codechella.infra.persistence.repositories.UserJpaRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -20,8 +20,8 @@ public class UserConfig {
     }
 
     @Bean
-    UserRepositoryImpl createUserRepositoryImpl(UserMapper mapper, UserJpaRepository repository) {
-        return new UserRepositoryImpl(repository, mapper);
+    UserPostgresRepositoryImpl createUserRepositoryImpl(UserMapper mapper, UserJpaRepository repository) {
+        return new UserPostgresRepositoryImpl(repository, mapper);
     }
 
     @Bean
